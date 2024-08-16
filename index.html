@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>e북포털 북큐브</title>
+</head>
+<body>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+
+    <!-- 헤더 시작 -->
+    <header class="header">
+        <div class="header_top">
+            <div class="header_top_inner">
+                <div class="header_top_top">
+                    <h1 class="logo"><a href="./index.html"></a></h1>
+                    <div class="search_box">
+                        <input type="text" class="search_area">
+                        <input type="button" class="search_btn">
+                    </div>
+                    <div class="header_icon">
+                        <a href="#" class="login_btn">
+                            <img src="./img/login_btn.png" alt="login_btn_img">
+                            <span>로그인</span>
+                        </a>
+                        <a href="#" class="join_btn">
+                            <img src="./img/join_btn.png" alt="join_btn_img">
+                            <span>회원가입</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header_top_bottom">
+                    <ul class="htb_left">
+                        <li><a href="#">국내도서</a></li>
+                        <li><a href="#">서양도서</a></li>
+                        <li><a href="#">동양도서</a></li>
+                    </ul>
+                    <ul class="htb_right">
+                        <li><a href="#">캐시충전</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="header_bottom_inner">
+                <div class="header_bottom_left">
+                    <div class="all_category">
+                        <a href="#">
+                            <img src="./img/all-category.png" alt="">
+                        </a>
+                    </div>
+                    <div class="main_menu">
+                        <ul>
+                            <li>
+                                <a href="#" class="main_menu_ct menu_on">국내도서</a>
+                                <ul class="sub sub_menu_01">
+                                    <li><a href="#">소설</a></li>
+                                    <li><a href="#">시/에세이</a></li>
+                                    <li><a href="#">인문</a></li>
+                                    <li><a href="#">가정/육아</a></li>
+                                    <li><a href="#">요리</a></li>
+                                    <li><a href="#">건강</a></li>
+                                    <li><a href="#">취미/실용/스포츠</a></li>
+                                    <li><a href="#">경제/경영</a></li>
+                                    <li><a href="#">자기계발</a></li>
+                                    <li><a href="#">정치/사회</a></li>
+                                </ul>
+                                <ul class="sub sub_menu_02">
+                                    <li><a href="#">역사/문화</a></li>
+                                    <li><a href="#">종교</a></li>
+                                    <li><a href="#">예술/대중문화</a></li>
+                                    <li><a href="#">중/고등참고서</a></li>
+                                    <li><a href="#">기술/공학</a></li>
+                                    <li><a href="#">외국어</a></li>
+                                    <li><a href="#">과학</a></li>
+                                    <li><a href="#">취업/수험서</a></li>
+                                    <li><a href="#">여행</a></li>
+                                    <li><a href="#">컴퓨터/IT</a></li>
+                                </ul>
+                                <ul class="sub sub_menu_03">
+                                    <li><a href="#">잡지</a></li>
+                                    <li><a href="#">청소년</a></li>
+                                    <li><a href="#">초등참고서</a></li>
+                                    <li><a href="#">유아(0~7세)</a></li>
+                                    <li><a href="#">어린이(초등)</a></li>
+                                    <li><a href="#">만화</a></li>
+                                    <li><a href="#">대학교재</a></li>
+                                    <li><a href="#">한국소개도서</a></li>
+                                </ul>
+                                <div class="orange"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="main_menu_ct">서양도서</a>
+                                <ul class="sub sub_menu_01">
+                                    <li><a href="#">문학</a></li>
+                                    <li><a href="#">취미/실용/여행</a></li>
+                                    <li><a href="#">생활/건강/요리</a></li>
+                                    <li><a href="#">예술/건축</a></li>
+                                    <li><a href="#">인문/사회</a></li>
+                                    <li><a href="#">경제/경영</a></li>
+                                    <li><a href="#">과학/기술</a></li>
+                                    <li><a href="#">어린이ELT</a></li>
+                                    <li><a href="#">유아/아동/청소년</a></li>
+                                    <li><a href="#">한국관련도서</a></li>
+                                </ul>
+                                <ul class="sub sub_menu_02">
+                                    <li><a href="#">문구/멀티/비도서</a></li>
+                                    <li><a href="#">ELT/수험서</a></li>
+                                    <li><a href="#">프랑스도서</a></li>
+                                    <li><a href="#">독일도서</a></li>
+                                    <li><a href="#">스페인도서</a></li>
+                                    <li><a href="#">기타도서</a></li>
+                                    <li><a href="#">교재</a></li>
+                                </ul>
+                                <div class="orange"></div>
+                            </li>
+                            <li>
+                                <a href="#" class="main_menu_ct">동양도서</a>
+                                <ul class="sub sub_menu_01">
+                                    <li><a href="#">잡지</a></li>
+                                    <li><a href="#">엔터테인먼트</a></li>
+                                    <li><a href="#">만화/애니</a></li>
+                                    <li><a href="#">문학</a></li>
+                                    <li><a href="#">라이트노벨</a></li>
+                                    <li><a href="#">문고</a></li>
+                                    <li><a href="#">신서</a></li>
+                                    <li><a href="#">아동</a></li>
+                                    <li><a href="#">실용서/예술</a></li>
+                                    <li><a href="#">인문/사회</a></li>
+                                </ul>
+                                <ul class="sub sub_menu_02">
+                                    <li><a href="#">자연/기술과학</a></li>
+                                    <li><a href="#">어학/학습</a></li>
+                                    <li><a href="#">문구/멀티/기타</a></li>
+                                    <li><a href="#">중국도서</a></li>
+                                </ul>
+                                <div class="orange"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="hb_left_menu">
+                        <li><a href="#">소설</a></li>
+                        <li><a href="#">인문학</a></li>
+                        <li><a href="#">경제</a></li>
+                        <li><a href="#">어린이</a></li>
+                        <li><a href="#">자격증</a></li>
+                    </ul>
+                </div>
+                <div class="header_bottom_right">
+                    <ul class="hb_right_menu">
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">신간</a></li>
+                        <li><a href="#">무료</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <!-- 탑으로 가기 버튼 -->
+    <div class="top_btn">
+        <a href="./index.html"></a>
+    </div>
+
+
+
+
+
+    <!-- 메인 슬라이더 -->
+    <section class="slider">
+        <h3>오늘의 추천 <span>[소설]</span></h3>
+        <ul class="slider_wrap">
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+        </ul>
+        <div class="slider_arrow">
+            <div class="arrow_left_none"></div>
+            <a href="#" class="arrow_right"></a>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- 최대50% 퀵메뉴 부분 -->
+    <div class="quick">
+        <ul>
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+            <li><a href="./sub.html"></a></li>
+        </ul>
+    </div>
+
+
+
+
+
+    <!-- 인터파크 구매목록 이미지 배너 -->
+    <div class="banner">
+        <a href="./sub.html">
+            <img src="./img/interpark_banner.png" alt="">
+        </a>
+    </div>
+
+
+
+
+
+    <!-- 첫번쨰 이벤트 배너 -->
+    <div class="event">
+        <div class="e_arrow_left"></div>
+        <div class="e_arrow_right"></div>
+
+        <div class="event_header">
+            <h3>이벤트</h3>
+            <a href="./sub.html">더보기<span>+</span></a>
+        </div>
+        <div class="event_frame">
+
+            <div class="event_area">
+                <div class="event_contents">
+                    <a href="./sub.html">
+                        <img src="./img/e01.jpg" alt="">
+                    </a>
+                </div>
+                <div class="event_contents">
+                    <a href="./sub.html">
+                        <img src="./img/e02.jpg" alt="">
+                    </a>
+                </div>
+                <div class="event_contents">
+                    <a href="./sub.html">
+                        <img src="./img/e03.jpg" alt="">
+                    </a>
+                </div>
+                <div class="event_contents">
+                    <a href="./sub.html">
+                        <img src="./img/e04.jpg" alt="">
+                    </a>
+                </div>
+                <div class="event_contents">
+                    <a href="./sub.html">
+                        <img src="./img/e05.jpg" alt="">
+                    </a>
+                </div>
+                <div class="event_contents">
+                    <a href="./sub.html">
+                        <img src="./img/e06.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 카테고리별 베스트 -->
+    <div class="ct_best">
+        <h3>카테고리별 베스트</h3>
+        <ul class="ct_list">
+            <li><a href="./sub.html">문학<span class="ct_arrow"></span></a></li>
+            <li><a href="./sub.html">경제/경영<span class="ct_arrow"></span></a></li>
+            <li><a href="./sub.html">자기계발<span class="ct_arrow"></span></a></li>
+            <li><a href="./sub.html">인문<span class="ct_arrow"></span></a></li>
+            <li><a href="./sub.html">사회<span class="ct_arrow"></span></a></li>
+            <li><a href="./sub.html">여행<span class="ct_arrow"></span></a></li>
+        </ul>
+    </div>
+
+
+
+
+
+    <!-- 베스트 세로 책 목록 부분 -->
+    <div class="best">
+        <div class="best_inner">
+            <div class="best_inner_title">
+                <h4>자기계발 TOP7</h4>
+                <a href="./sub.html">더보기<span>+</span></a>
+            </div>
+            <ul class="best_list best_list_01">
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+            </ul>
+        </div>
+        <div class="best_inner">
+            <div class="best_inner_title">
+                <h4>인문 TOP7</h4>
+                <a href="./sub.html">더보기<span>+</span></a>
+            </div>
+            <ul class="best_list best_list_02">
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+            </ul>
+        </div>
+        <div class="best_inner">
+            <div class="best_inner_title">
+                <h4>여행 TOP7</h4>
+                <a href="./sub.html">더보기<span>+</span></a>
+            </div>
+            <ul class="best_list best_list_03">
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+                <li><a href="./sub.html"></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 부자 투자 부분 책 추천 탭 -->
+    <div class="booktab">
+        <h3>부자가 되어있을 미래를 위하여! #투자 #돈</h3>
+
+        <div class="t_arrow_right"></div>
+
+        <div class="tab_frame">
+            <div class="tab_area">
+                <div class="tab_contents"><a href="./sub.html"></a></div>
+                <div class="tab_contents"><a href="./sub.html"></a></div>
+                <div class="tab_contents"><a href="./sub.html"></a></div>
+                <div class="tab_contents"><a href="./sub.html"></a></div>
+                <div class="tab_contents"><a href="./sub.html"></a></div>
+                <div class="tab_contents"><a href="./sub.html"></a></div>
+                <div class="tab_contents"><a href="./sub.html"></a></div>
+                <div class="tab_contents"><a href="./sub.html"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 축구 부분 책 추천 탭 -->
+    <div class="booktab_02">
+        <h3>내 꿈은 축구왕! #손흥민 #축협</h3>
+
+        <div class="t_arrow_right_02"></div>
+
+        <div class="tab_frame_02">
+            <div class="tab_area_02">
+                <div class="tab_contents_02"><a href="./sub.html"></a></div>
+                <div class="tab_contents_02"><a href="./sub.html"></a></div>
+                <div class="tab_contents_02"><a href="./sub.html"></a></div>
+                <div class="tab_contents_02"><a href="./sub.html"></a></div>
+                <div class="tab_contents_02"><a href="./sub.html"></a></div>
+                <div class="tab_contents_02"><a href="./sub.html"></a></div>
+                <div class="tab_contents_02"><a href="./sub.html"></a></div>
+                <div class="tab_contents_02"><a href="./sub.html"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 두번째 이벤트 배너 -->
+    <div class="event_02">
+        <div class="e_arrow_left_02"></div>
+        <div class="e_arrow_right_02"></div>
+
+        <div class="event_header_02">
+            <h3>이벤트</h3>
+            <a href="./sub.html">더보기<span>+</span></a>
+        </div>
+        <div class="event_frame_02">
+
+            <div class="event_area_02">
+                <div class="event_contents_02">
+                    <a href="./sub.html">
+                        <img src="./img/e04.jpg" alt="">
+                    </a>
+                </div>
+                <div class="event_contents_02">
+                    <a href="./sub.html">
+                        <img src="./img/e05.jpg" alt="">
+                    </a>
+                </div>
+                <div class="event_contents_02">
+                    <a href="./sub.html">
+                        <img src="./img/e06.jpg" alt="">
+                    </a>
+                </div>
+                <div class="event_contents_02">
+                    <a href="./sub.html">
+                        <img src="./img/e01.jpg" alt="">
+                    </a>
+                </div>
+                <div class="event_contents_02">
+                    <a href="./sub.html">
+                        <img src="./img/e02.jpg" alt="">
+                    </a>
+                </div>
+                <div class="event_contents_02">
+                    <a href="./sub.html">
+                        <img src="./img/e03.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 컴퓨터 부분 책 추천 탭 -->
+    <div class="booktab_03">
+        <div class="tab_03_title">
+            <h3>컴퓨터</h3>
+            <a href="./sub.html">더보기<span>+</span></a>
+        </div>
+
+        <div class="tab_area_03">
+            <div class="tab_contents_03"><a href="./sub.html"></a></div>
+            <div class="tab_contents_03"><a href="./sub.html"></a></div>
+            <div class="tab_contents_03"><a href="./sub.html"></a></div>
+            <div class="tab_contents_03"><a href="./sub.html"></a></div>
+            <div class="tab_contents_03"><a href="./sub.html"></a></div>
+            <div class="tab_contents_03"><a href="./sub.html"></a></div>
+            <div class="tab_contents_03"><a href="./sub.html"></a></div>
+            <div class="tab_contents_03"><a href="./sub.html"></a></div>
+            <div class="tab_contents_03"><a href="./sub.html"></a></div>
+            <div class="tab_contents_03"><a href="./sub.html"></a></div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 브랜드관 배너 부분 -->
+    <div class="brand">
+        <div class="brand_title">
+            <h3>브랜드관</h3>
+            <a href="./sub.html">더보기<span>+</span></a>
+        </div>
+        <ul class="brand_list">
+            <li><a href="./sub.html"><img src="./img/brand01.jpg" alt=""></a></li>
+            <li><a href="./sub.html"><img src="./img/brand02.jpg" alt=""></a></li>
+            <li><a href="./sub.html"><img src="./img/brand03.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <!-- 푸터 시작 -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="notice_wrap">
+                <div class="notice_inner">
+                    <p>공지사항</p>
+                    <div class="notice_frame">
+                        <div class="notice_area">
+                            <div class="notice_contents">
+                                <a href="./sub.html">8월 16일(금) 고객센터 휴무 안내</a>
+                                <span>2024-08-12</span>
+                            </div>
+                            <div class="notice_contents">
+                                <a href="./sub.html">북큐브 서버 정기점검 작업 공지 (7/31(수) 04:00~08:00)</a>
+                                <span>2024-07-30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice_arrow">
+                        <div class="notice_up"></div>
+                        <div class="notice_dn"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="app_banner">
+                <a href="./sub.html">
+                    <img src="./img/apk_down_banner.jpg" alt="">
+                </a>
+            </div>
+            <div class="cs_wrap">
+                <div class="service">
+                    <h4>서비스</h4>
+                    <div>
+                        <a href="./sub.html">전자도서관</a>
+                        <a href="./sub.html">앱 다운로드</a>
+                    </div>
+                </div>
+                <div class="shortcut">
+                    <h4>바로가기</h4>
+                    <div>
+                        <a href="./sub.html">쿠폰등록</a>
+                        <a href="./sub.html">원격 연결</a>
+                        <a href="./sub.html">북캐시 충전</a>
+                        <a href="./sub.html">마이페이지</a>
+                        <a href="./sub.html">고객센터</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_inner">
+                <ul class="f-inb">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">작가/출판사 전용메뉴</a></li>
+                </ul>
+                <ul class="f-banner">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"><span></span>이메일 문의</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="address">
+                    <li>상호 : 주식회사 북큐브네트웍스</li>
+                    <li>대표이사 : 유철종</li>
+                    <li>주소 : 우)08380 서울 구로구 디지털로 33길 27, 삼성IT밸리 905~907호</li>
+                    <li>사업자 등록번호 : 113-86-24199</li>
+                    <li>통신판매업 신고번호 : 제 2008-서울구로-0747호</li>
+                    <li>개인정보 관리 책임자 : 이성권</li>
+                    <li>도서비 소득공제 대상 사업자 인증번호 : 312018060044</li>
+                    <li>E-mail : <a href="#">webmaster@bookcube.com</a></li>
+                    <li>전화 1588-1925</li>
+                </ul>
+                <div class="copy_text">
+                    <p>COPYRIGHT 2016. BOOKCUBENETWORKS CO.,LTD. ALL RIGHTS RESERVED.</p>
+                    <img src="./img/site.png" alt="">
+                    <img src="./img/rightNow.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

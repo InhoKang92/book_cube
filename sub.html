@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub.css">
+
+    <title>사소한 것들로 하는 사랑이었다</title>
+</head>
+<body>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+
+        <!-- 헤더 시작 -->
+        <header class="header">
+            <div class="header_top">
+                <div class="header_top_inner">
+                    <div class="header_top_top">
+                        <h1 class="logo"><a href="./index.html"></a></h1>
+                        <div class="search_box">
+                            <input type="text" class="search_area">
+                            <input type="button" class="search_btn">
+                        </div>
+                        <div class="header_icon">
+                            <a href="#" class="login_btn">
+                                <img src="./img/login_btn.png" alt="login_btn_img">
+                                <span>로그인</span>
+                            </a>
+                            <a href="#" class="join_btn">
+                                <img src="./img/join_btn.png" alt="join_btn_img">
+                                <span>회원가입</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header_top_bottom">
+                        <ul class="htb_left">
+                            <li><a href="#">국내도서</a></li>
+                            <li><a href="#">서양도서</a></li>
+                            <li><a href="#">동양도서</a></li>
+                        </ul>
+                        <ul class="htb_right">
+                            <li><a href="#">캐시충전</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <div class="header_bottom_inner">
+                    <div class="header_bottom_left">
+                        <div class="all_category">
+                            <a href="#">
+                                <img src="./img/all-category.png" alt="">
+                            </a>
+                        </div>
+                        <div class="main_menu">
+                            <ul>
+                                <li>
+                                    <a href="#" class="main_menu_ct menu_on">국내도서</a>
+                                    <ul class="sub sub_menu_01">
+                                        <li><a href="#">소설</a></li>
+                                        <li><a href="#">시/에세이</a></li>
+                                        <li><a href="#">인문</a></li>
+                                        <li><a href="#">가정/육아</a></li>
+                                        <li><a href="#">요리</a></li>
+                                        <li><a href="#">건강</a></li>
+                                        <li><a href="#">취미/실용/스포츠</a></li>
+                                        <li><a href="#">경제/경영</a></li>
+                                        <li><a href="#">자기계발</a></li>
+                                        <li><a href="#">정치/사회</a></li>
+                                    </ul>
+                                    <ul class="sub sub_menu_02">
+                                        <li><a href="#">역사/문화</a></li>
+                                        <li><a href="#">종교</a></li>
+                                        <li><a href="#">예술/대중문화</a></li>
+                                        <li><a href="#">중/고등참고서</a></li>
+                                        <li><a href="#">기술/공학</a></li>
+                                        <li><a href="#">외국어</a></li>
+                                        <li><a href="#">과학</a></li>
+                                        <li><a href="#">취업/수험서</a></li>
+                                        <li><a href="#">여행</a></li>
+                                        <li><a href="#">컴퓨터/IT</a></li>
+                                    </ul>
+                                    <ul class="sub sub_menu_03">
+                                        <li><a href="#">잡지</a></li>
+                                        <li><a href="#">청소년</a></li>
+                                        <li><a href="#">초등참고서</a></li>
+                                        <li><a href="#">유아(0~7세)</a></li>
+                                        <li><a href="#">어린이(초등)</a></li>
+                                        <li><a href="#">만화</a></li>
+                                        <li><a href="#">대학교재</a></li>
+                                        <li><a href="#">한국소개도서</a></li>
+                                    </ul>
+                                    <div class="orange"></div>
+                                </li>
+                                <li>
+                                    <a href="#" class="main_menu_ct">서양도서</a>
+                                    <ul class="sub sub_menu_01">
+                                        <li><a href="#">문학</a></li>
+                                        <li><a href="#">취미/실용/여행</a></li>
+                                        <li><a href="#">생활/건강/요리</a></li>
+                                        <li><a href="#">예술/건축</a></li>
+                                        <li><a href="#">인문/사회</a></li>
+                                        <li><a href="#">경제/경영</a></li>
+                                        <li><a href="#">과학/기술</a></li>
+                                        <li><a href="#">어린이ELT</a></li>
+                                        <li><a href="#">유아/아동/청소년</a></li>
+                                        <li><a href="#">한국관련도서</a></li>
+                                    </ul>
+                                    <ul class="sub sub_menu_02">
+                                        <li><a href="#">문구/멀티/비도서</a></li>
+                                        <li><a href="#">ELT/수험서</a></li>
+                                        <li><a href="#">프랑스도서</a></li>
+                                        <li><a href="#">독일도서</a></li>
+                                        <li><a href="#">스페인도서</a></li>
+                                        <li><a href="#">기타도서</a></li>
+                                        <li><a href="#">교재</a></li>
+                                    </ul>
+                                    <div class="orange"></div>
+                                </li>
+                                <li>
+                                    <a href="#" class="main_menu_ct">동양도서</a>
+                                    <ul class="sub sub_menu_01">
+                                        <li><a href="#">잡지</a></li>
+                                        <li><a href="#">엔터테인먼트</a></li>
+                                        <li><a href="#">만화/애니</a></li>
+                                        <li><a href="#">문학</a></li>
+                                        <li><a href="#">라이트노벨</a></li>
+                                        <li><a href="#">문고</a></li>
+                                        <li><a href="#">신서</a></li>
+                                        <li><a href="#">아동</a></li>
+                                        <li><a href="#">실용서/예술</a></li>
+                                        <li><a href="#">인문/사회</a></li>
+                                    </ul>
+                                    <ul class="sub sub_menu_02">
+                                        <li><a href="#">자연/기술과학</a></li>
+                                        <li><a href="#">어학/학습</a></li>
+                                        <li><a href="#">문구/멀티/기타</a></li>
+                                        <li><a href="#">중국도서</a></li>
+                                    </ul>
+                                    <div class="orange"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="hb_left_menu">
+                            <li><a href="#">소설</a></li>
+                            <li><a href="#">인문학</a></li>
+                            <li><a href="#">경제</a></li>
+                            <li><a href="#">어린이</a></li>
+                            <li><a href="#">자격증</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_bottom_right">
+                        <ul class="hb_right_menu">
+                            <li><a href="#">베스트</a></li>
+                            <li><a href="#">신간</a></li>
+                            <li><a href="#">무료</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+    
+    
+    
+    
+        <!-- 탑으로 가기 버튼 -->
+        <div class="top_btn">
+            <a href="#"></a>
+        </div>
+
+
+
+
+
+
+        <!-- 서브페이지 본문 최상단 네비게이션 -->
+        <div class="top_nav">
+            <div class="top_nav_inner">
+                <a href="./index.html">HOME</a>
+                <a href="#">국내도서</a>
+                <a href="#">시/에세이</a>
+                <a href="#">나라별 에세이</a>
+                <a href="#">영미에세이</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- 책 정보 상단 -->
+        <div class="book_info">
+            <h3 class="book_title">내가 당신과 하고 싶은 것은 <span>사소한 것들로 하는 사랑이었다</span></h3>
+            <div class="book_info_inner">
+                <div class="book_img_box">
+                    <div class="book_img">
+                        <img src="./img/book_front.jfif">
+                    </div>
+                </div>
+                <div class="book_detail">
+                    <h4>세기의 책들 20선, 천년의 지혜 시리즈 <span>07</span></h4>
+                    <p>리처드 칼슨 , 크리스틴 칼슨 저자(글) · 서진 기획 · 안진환 번역</p>
+                    <p>스노우폭스북스 · 2024년 07월 31일</p>
+                    <p>주간베스트</p>
+                    <p>국내도서 <span>176</span>위 · 시/에세이 <span>15</span>위</p>
+                    <p class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>10.0</span>
+                        <a href="#tab02">(128개의 리뷰)</a>
+                    </p>
+                    <div class="price_info">
+                        <div class="price">
+                            <p>판매가</p>
+                            <p>
+                                <span>10%</span>
+                                15,120원
+                                <span>16,800원</span>
+                            </p>
+                        </div>
+                        <div class="pri_ben">
+                            <p>적립/혜택</p>
+                            <p>
+                                <span>840P</span>
+                                <a href="#">
+                                    <i class="fa-regular fa-square-plus"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="pri_del">
+                            <p>배송안내</p>
+                            <div>
+                                <p>
+                                    <span>무료배송</span>
+                                    <a href="#">
+                                        <i class="fa-regular fa-square-plus"></i>
+                                    </a>
+                                </p>
+                                <p>
+                                    <span>2일 이내 도착 보장</span>
+                                    <a href="#">
+                                        <i class="fa-solid fa-circle-question"></i>
+                                    </a>
+                                </p>
+                                <p>
+                                    <span>기본배송지 기준</span>
+                                    <a href="#">
+                                        <i class="fa-solid fa-circle-exclamation"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="del_box"><a href="#">로그인 </a>후 정확한 배송정보를 확인해보세요!</div>
+                    </div>
+                    <div class="btn_box">
+                        <div class="btn_bag"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="btn_gift"><i class="fa-solid fa-gift"></i></div>
+                        <div class="btn_buy">바로 구매</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- 책 정보 하단 -->
+        <div class="book_info_bottom">
+            <div class="info_menu_bar">
+                <ul class="bar_inner">
+                    <li><a href="#tab01" class="menu_tab">도서정보</a></li>
+                    <li><a href="#tab02" class="menu_tab">리뷰(128)</a></li>
+                    <li><a href="#tab03" class="menu_tab">교환/반품</a></li>
+                </ul>
+            </div>
+
+
+            <div class="book_info_01">
+                <span id="tab01"></span>
+                <img src="./img/info01.jpg" alt="">
+                <div>
+                    <h4>책 소개</h4>
+                    <h5>이 책이 속한 분야</h5>
+                    <div>
+                        <a href="#">국내도서</a>
+                        <a href="#">시/에세이</a>
+                        <a href="#">나라별 에세이</a>
+                        <a href="#">영미에세이</a>
+                    </div>
+                    <p>이 책 『사소한 것들로 하는 사랑이었다』는 Don't Sweat The Small Stuff…의 30주년 기념 시리즈로 세계 여러 나라에 동시 출간된 2024년 개정판이다. 영국 대표 언론사 중 한 곳인 The Daily Telegraph 기준, 135개 나라에서 출간됐으며 미국 USA 발표 기준, 90년대 가장 많이 팔린 책 2위로 기록되었다. [PEOPLE] 지는 ‘가장 주목 받는 사람 중 한 명’으로 리처드 칼슨을 선정했으며 오프라 윈프리쇼, CNN 등 유명 TV쇼 단골 출연자로 유명세를 펼쳤다.<br><br>
+                    이 책은 큰 카테고리에서 남녀의 이상적인 사랑을 주제로 부부사이를 논하는 듯하지만 인간관계와 나 개인의 품성을 점검해 볼 수 있다는 면에서 보편적인 일반 사람들의 마음에 깊은 공감을 남기며 세계적인 여러 기록을 남겼다.<br><br>
+                    저자 리처드 칼슨은 이 책 출간 이후, 2006년에 새롭게 출간된 도서 홍보차 올라탄 뉴욕행 비행기에서 갑작스레 심장마비로 사망했다. 남녀의 사랑, 특히 오래된 연인과 부부 사이에 가장 인간적인 면을 중심에 두고 더 사랑하며 행복하게 살 수 있다는 메시지를 만들어 낸 사람. 그 따뜻한 메시지를 함께 써낸, 평생의 반려자를 예고 없이 잃은 그의 아내 크리스틴 칼슨은 슬픔을 이겨내 오다 매우 정교한 작업을 통해 이 책 『사소한 것들로 하는 사랑이었다』의 30주년 단독 개정판 저자가 되었다.<br><br>
+                    이 책은 심연의 아름다운 ‘사랑’이라는 주제를 보다 아름다운 인간의 면모를 갈고 닦아 우리 삶을 더 풍족하고 행복한 시간으로 채울 수 있다는 메시지로 채웠다. 100가지 사례와 저자들의 현실적이며 소박한 조언이 10개장으로 나뉘어 담겼다.</p>
+                </div>
+                <div>
+                    <h4>작가 소개</h4>
+                    <h5 style="font-weight: 600;">리처드 칼슨, 크리스틴 칼슨</h5>
+                    <p>Richard Carlson, Kristine Carlson<br><br>
+                        이 책의 두 저자는 미국에서 100주 이상 베스트셀러를 차지하며 강력한 신드롬으로 폭발적인 대중의 사랑을 받았다. [PEOPLE] 지는 ‘가장 주목 받는 사람 중 한 명’으로 리처드 칼슨을 선정했으며 오프라 윈프리쇼, CNN 등 유명 TV쇼 단골 출연자로 유명세를 펼쳤다. 최고의 행복 만들기 전문가로 평가 받는 심리학 박사였던 저자는 지난 2006년 12월 13일, 『스크루지 길들이기』 홍보차 올라탄 뉴욕행 비행기에서 갑작스런 심장마비로 세상을 떠났다. 하지만 그는 30년간 여전히 많은 사람들에게 긍정적인 변화와 마음의 평화를 가져다주는 중요한 역할을 하고 있다.<br><br>
+                        이 책 『Don't Sweat The Small Stuff In Love』 시리즈는 전 세계적으로 2,500만 부 이상 팔린 것으로 집계되었으며 이번 『사소한 것들로 하는 사랑이었다』는 출간 30주년 기념 개정판으로 세계 여러 나라에서 동시 출간된 최신 개정판이다. 공동 집필자이자 평생의 친구, 사랑하는 아내였던 크리스틴 칼슨을 통해 정교하게 부분 개정됐다.
+                        그녀는 남편의 갑작스런 사망 후 극심한 슬픔과 상실을 극복하고 삶을 재정립하는 여정을 시작으로 여성들을 위한 리트릿을 운영하고 있다. 특히 상실을 경험한 사람들에게 희망과 치유의 메시지를 전달하는 데 주력하고 있다.</p>
+                </div>
+                <div>
+                    <h4>추천사</h4>
+                    <h5>남규홍 PD (<나는 SOLO> 기획·제작자)</h5>
+                    <p>〈나는 SOLO〉에서 수많은 커플이 맺어지고 실패하는 경우를 지켜보면서 최종 선택에 이르게 하는 가장 중요한 것은 무엇일까 고민했습니다. 그리고 이 책에서 그 해답의 일부를 발견합니다.<br><br>
+                        인간은 지극히 사소한 행동과 말에서 운명을 결정하는가 봅니다.<br><br>
+                        이 책의 100가지 장면은 사랑에 있어서 예의와 진솔함이 왜 중요한지 보여줍니다.</p>
+                </div>
+                <div class="basic_info">
+                    <h4>기본정보</h4>
+                    <div>
+                        <div>
+                            <p>ISBN</p>
+                            <p>발행(출시)일자</p>
+                            <p>쪽수</p>
+                            <p>크기</p>
+                            <p>총권수</p>
+                            <p>시리즈명</p>
+                            <p>우너서명/저자명</p>
+                        </div>
+                        <div>
+                            <p>9791191769760</p>
+                            <p>2024년 07월 31일</p>
+                            <p>430쪽</p>
+                            <p>142 * 210 * 31 mm / 676 g</p>
+                            <p>1권</p>
+                            <p>세기의 책들 20선, 천년의 지혜 시리즈</p>
+                            <p>Don't Sweat the Small Stuff in Love/Richard Carlson</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book_info_02">
+                <span id="tab02"></span>
+                <h4>리뷰(128)</h4>
+                <div class="review_star">
+                    <h5>리뷰 총점</h5>
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <h6>10.0<span>10</span></h6>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>100%</p>
+                        </div>
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p>0%</p>
+                        </div>
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p>0%</p>
+                        </div>
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p>0%</p>
+                        </div>
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p>0%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_comments">
+                    <div class="comments_tab">
+                        <a href="#">전체 리뷰</a>
+                        <a href="#">사진 리뷰</a>
+                    </div>
+                    <div class="personal_comment">
+                        <div class="comment_top">
+                            <p>종이책 구매자</p>
+                            <p>kp****************</p>
+                            <p>2024.08.01</p>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="comment_bottom">
+                            살면서 삶의 무게에 압도당할 때가 있다. 그때의 거울속 나를 보면 비참하기 그지없다. 상처 줄 의도는 없지만 나도 모르게 내 곁에 있는 사람들은 뒷순위로 밀려나게 된다. 지금 이 책을 읽고 느끼는 바가 있다면 힘들어도 주변 사람에게 감사함을 느끼며 평생 함께 응원해야할 필연 존재인 것이다.
+                        </div>
+                    </div>
+                    <div class="personal_comment">
+                        <div class="comment_top">
+                            <p>종이책 구매자</p>
+                            <p>ka***********</p>
+                            <p>2024.08.01</p>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="comment_bottom">
+                            이책을 읽고 나서 일상 속의 작은 순간들이 모여 진정한 사랑을 완성해 나가는 과정을 섬세하게 그려낸다. 작가는 사소해 보이는 일상 속 행동들이 어떻게 관계를 깊어지게 하는지를 보여주며, 사랑의 본질이 거창한 것이 아닌 작은 배려와 마음 씀씀이에 있음을 일깨운다. 이를 통해 독자는 진정한 사랑의 의미와 그것을 실천하는 방법에 대해 다시 한 번 생각해 보게 된다. 이 책은 우리의 일상 속 작은 행동들이 얼마나 큰 영향을 미치는지 깨닫게 해주는 따뜻한 감동을 선사한다.
+                        </div>
+                    </div>
+                    <div class="personal_comment">
+                        <div class="comment_top">
+                            <p>종이책 구매자</p>
+                            <p>ye********</p>
+                            <p>2024.08.12</p>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="comment_bottom">
+                            차한잔하며 수시로 읽고 있어요~<br>
+                            사랑이라는 단어에 대해 다시한번 생각해 볼수 있는 기회여서 너무 뜻깊은 시간이었어요..<br>
+                            주변분들께 다 읽고 선물하고 싶네요<br>
+                            따뜻한 문장들이 마음을 힐링하게 만들어줘요~
+                        </div>
+                    </div>
+                    <div class="personal_comment">
+                        <div class="comment_top">
+                            <p>종이책 구매자</p>
+                            <p>ai************</p>
+                            <p>2024.08.10</p>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="comment_bottom">
+                            특별한날만 인증하고 특별한날만 찾는 일상
+                            편안한 그동안도 사랑하는법을 배웠다. <br><br>
+
+                            우울증이와서 생각이 많은 요즘
+                            나의 배우자와 함께 오래 사랑하며 살자.
+                            라는 생각은 변하지않았기에 나 부터 노력을 해보자라는 생각이 들게하는 책입니다.<br><br>
+
+                            베스트셀러일수밖에없는 이책 추천합니다.
+                        </div>
+                    </div>
+                    <div class="personal_comment">
+                        <div class="comment_top">
+                            <p>종이책 구매자</p>
+                            <p>y2****</p>
+                            <p>2024.08.09</p>
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <div class="comment_bottom">
+                            진심으로 너무 좋은 책이라고 생각합니다. <br>
+                            지금 사랑하고 있는 모든 사람이 함께 읽었으면 하는 책이네요. 책을 읽으면서 감사함도 많이 느끼고, 저도 많이 되돌아 보게 되었어요. 한번이 아니라 여러번씩 읽으며 계속 보고싶은 책입니다. 그리고 술술 읽히는 스타일이고 손이 잘 가서 지하철 등 짧은 시간시간에도 잠깐씩 볼 수 있어 더욱 좋았어요 강력 추천 합니다.<br>
+                            사랑하고 있는 사람 , 사랑 할 사람 모두 보시기를
+                        </div>
+                    </div>
+                    <div class="comment_page">
+                        <a href="#"><i class="fa-solid fa-caret-left"></i></a>
+                        <a href="#" class="page_on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="book_info_03">
+                <span id="tab03"></span>
+                <h4>교환/반품 안내</h4>
+                <div>
+                    <h5>반품/교환방법</h5>
+                    <p>마이룸 > 주문관리 > 주문/배송내역 > 주문조회 > 반품/교환 신청, [1:1 상담 > 반품/교환/환불] 또는 고객센터 (1544-1900)<br>
+                        * 오픈마켓, 해외배송 주문, 기프트 주문시 [1:1 상담>반품/교환/환불] 또는 고객센터 (1544-1900)</p>
+                </div>
+                <div>
+                    <h5>반품/교환가능 기간</h5>
+                    <p>변심반품의 경우 수령 후 7일 이내,<br>
+                        상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내</p>
+                </div>
+                <div>
+                    <h5>반품/교환비용</h5>
+                    <p>변심 혹은 구매착오로 인한 반품/교환은 반송료 고객 부담</p>
+                </div>
+                <div>
+                    <h5>반품/교환 불가 사유</h5>
+                    <p>1) 소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우<br>
+                        (단지 확인을 위한 포장 훼손은 제외)<br>
+                        2) 소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우<br>
+                        예) 화장품, 식품, 가전제품(악세서리 포함) 등<br>
+                        3) 복제가 가능한 상품 등의 포장을 훼손한 경우<br>
+                        예) 음반/DVD/비디오, 소프트웨어, 만화책, 잡지, 영상 화보집<br>
+                        4) 소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우 ((1)해외주문도서)<br>
+                        5) 디지털 컨텐츠인 ebook, 오디오북 등을 1회이상 ‘다운로드’를 받았거나 '바로보기'로 열람한 경우<br>
+                        6) 시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우<br>
+                        7) 전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우<br>
+                        8) 세트상품 일부만 반품 불가 (필요시 세트상품 반품 후 낱권 재구매)</p>
+                </div>
+                <div>
+                    <h5>소비자 피해보상 환불 지연에 따른 배상</h5>
+                    <p>1) 상품의 불량에 의한 교환, A/S, 환불, 품질보증 및 피해보상 등에 관한 사항은 소비자분쟁 해결 기준 (공정거래위원회 고시)에 준하여 처리됨<br>
+                        2) 대금 환불 및 환불지연에 따른 배상금 지급 조건, 절차 등은 전자상거래 등에서의 소비자 보호에 관한 법률에 따라 처리함</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    <!-- 푸터 시작 -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="notice_wrap">
+                <div class="notice_inner">
+                    <p>공지사항</p>
+                    <div class="notice_frame">
+                        <div class="notice_area">
+                            <div class="notice_contents">
+                                <a href="./sub.html">8월 16일(금) 고객센터 휴무 안내</a>
+                                <span>2024-08-12</span>
+                            </div>
+                            <div class="notice_contents">
+                                <a href="./sub.html">북큐브 서버 정기점검 작업 공지 (7/31(수) 04:00~08:00)</a>
+                                <span>2024-07-30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice_arrow">
+                        <div class="notice_up"></div>
+                        <div class="notice_dn"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="app_banner">
+                <a href="./sub.html">
+                    <img src="./img/apk_down_banner.jpg" alt="">
+                </a>
+            </div>
+            <div class="cs_wrap">
+                <div class="service">
+                    <h4>서비스</h4>
+                    <div>
+                        <a href="./sub.html">전자도서관</a>
+                        <a href="./sub.html">앱 다운로드</a>
+                    </div>
+                </div>
+                <div class="shortcut">
+                    <h4>바로가기</h4>
+                    <div>
+                        <a href="./sub.html">쿠폰등록</a>
+                        <a href="./sub.html">원격 연결</a>
+                        <a href="./sub.html">북캐시 충전</a>
+                        <a href="./sub.html">마이페이지</a>
+                        <a href="./sub.html">고객센터</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_inner">
+                <ul class="f-inb">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">작가/출판사 전용메뉴</a></li>
+                </ul>
+                <ul class="f-banner">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"><span></span>이메일 문의</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="address">
+                    <li>상호 : 주식회사 북큐브네트웍스</li>
+                    <li>대표이사 : 유철종</li>
+                    <li>주소 : 우)08380 서울 구로구 디지털로 33길 27, 삼성IT밸리 905~907호</li>
+                    <li>사업자 등록번호 : 113-86-24199</li>
+                    <li>통신판매업 신고번호 : 제 2008-서울구로-0747호</li>
+                    <li>개인정보 관리 책임자 : 이성권</li>
+                    <li>도서비 소득공제 대상 사업자 인증번호 : 312018060044</li>
+                    <li>E-mail : <a href="#">webmaster@bookcube.com</a></li>
+                    <li>전화 1588-1925</li>
+                </ul>
+                <div class="copy_text">
+                    <p>COPYRIGHT 2016. BOOKCUBENETWORKS CO.,LTD. ALL RIGHTS RESERVED.</p>
+                    <img src="./img/site.png" alt="">
+                    <img src="./img/rightNow.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/sub.js"></script>
+</body>
+</html>
